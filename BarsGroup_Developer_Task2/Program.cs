@@ -6,7 +6,8 @@
         private delegate void MyEventHandler(object sender, EventArgs e);
         private static void Main()
         {
-            EventHandler handler = new EventHandler(Control.TestMethodTimeOut);
+            Console.WriteLine("Выполнение AsyncCaller'а ограничено в 5000 миллисекунд");
+            
             TestMethod(Control.TestMethodTimeOut);
             TestMethod(Control.TestMethodDone);
 
@@ -22,6 +23,5 @@
             Console.WriteLine("Экземпляр AsyncCaller вернул :" + completedOK);
             Console.WriteLine("    Прошло:" + (DateTime.Now - dateTime).TotalMilliseconds + " миллисекунд.");
         }
-
     }
 }
