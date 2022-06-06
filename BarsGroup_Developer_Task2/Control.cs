@@ -10,7 +10,7 @@
             Thread.Sleep(2500);
             Console.WriteLine("TestMethodDone выполнен!");
         }
-        public static void TestMethodTimeOut(object sender, EventArgs e)
+        public static void TestMethodTimeOut(object sender, EventArgs eventArgs)
         {
             Console.WriteLine("TestMethodTimeOut начат!");
             Thread.Sleep(7500);
